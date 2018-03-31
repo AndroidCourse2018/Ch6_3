@@ -23,16 +23,19 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(btn2listener);
     }
 
-    View.OnClickListener btn1listener = new View.OnClickListener() {
+    // button1 的 lisetener 物件
+    View.OnClickListener btn1listener = new View.OnClickListener() { // 由 View.OnClickListener 類別建立 btn1listener 物件 -> 類別名稱 物件名稱 = new 類別名稱()
         @Override
-        public void onClick(View view) {
-            Toast.makeText(MainActivity.this, Integer.toString(num1) , Toast.LENGTH_SHORT).show();
+        public void onClick(View view) { //宣告 onClick 方法， void為無傳回值
+            Toast.makeText(MainActivity.this, Integer.toString(num1) , Toast.LENGTH_SHORT).show(); //當監聽到onClick方法時，會顯示一個彈跳訊息框
         }
     };
-    View.OnClickListener btn2listener = new View.OnClickListener() {
+
+    // button2 的 lisetener 物件
+    View.OnClickListener btn2listener = new View.OnClickListener() {  // 由 View.OnClickListener 類別建立 btn2listener 物件  -> 類別名稱 物件名稱 = new 類別名稱()
         @Override
-        public void onClick(View view) {
-            Toast.makeText(MainActivity.this, Integer.toString(num2) , Toast.LENGTH_SHORT).show();
+        public void onClick(View view) { //宣告 onClick 方法， void為無傳回值
+            Toast.makeText(MainActivity.this, Integer.toString(num2) , Toast.LENGTH_SHORT).show(); //當監聽到onClick方法時，會顯示一個彈跳訊息框
         }
     };
 }
