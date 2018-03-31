@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         //使用亂數取得數字
         num1 = (int) (Math.random()*12) + 1; //Math.random()*12的值為0~12，加1後為1~13
         num2 = (int) (Math.random()*12) + 1; //Math.random()*12的值為0~12，加1後為1~13
-        Button btn1 = (Button) findViewById(R.id.btn1);
-        btn1.setOnClickListener(btn1listener);
-        Button btn2 = (Button) findViewById(R.id.btn2);
-        btn2.setOnClickListener(btn2listener);
+        Button btn1 = (Button) findViewById(R.id.btn1); //找到Button id為btn1
+        btn1.setOnClickListener(btn1listener); //使用setOnClickListner()方法指定btn1的lisetener物件
+        Button btn2 = (Button) findViewById(R.id.btn2); //找到Button id為btn2
+        btn2.setOnClickListener(btn2listener); //使用setOnClickListner()方法指定btn2的lisetener物件
     }
 
     // button1 的 lisetener 物件
